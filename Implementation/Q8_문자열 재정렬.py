@@ -24,10 +24,11 @@ print(''.join(result))
 """내풀이
 s = list(input())
 s.sort()
-a = 0
+a = -1
 for i in range(len(s)):
     if s[i].isalpha():
         a = i
         break
-print(''.join(s[a:])+str(sum(map(int, s[:a]))))
+alpha = ''.join(s[a:])
+print(alpha+str(sum(map(int, s[:a]))) if a!=-1 else alpha) #만약에 숫자가 하나도 안 들어왔을 경우.. alpha만 출력되게.
 """
