@@ -16,7 +16,7 @@ for i in num:
     if s[-1] > int(i): #스택에 마지막으로 넣은 원소(s[-1])가 i(수열을 이뤄야하는 수)보다 크게 되면
                       # 스택 특정 상 더 작은 수를 먼저 꺼낼 수 없으므로 수열을 못 만드는 것.
         print('NO')
-        exit() #break를 쓰게 되면 아예 다음 입력을 받지 못하고 while반복문을 빠져나가기 때문에 exit()혹은 exit(0)으로 써줘야 한다
+        exit() #break를 쓰게 되면 NO만 출력되는게 아니라 다시 반복문 돌아서 딴 것도 출력.. exit()혹은 exit(0)으로 써줘야 한다
     else:#스택에 마지막으로 넣은 원소(s[-1])가 i(수열을 이뤄야하는 수)보다 크지 않으면 이번에 pop할 숫자 = i 일 것이므로 pop해줌.
         op.append('-')
         s.pop()
@@ -62,31 +62,4 @@ print('\n'.join(op))
 : 5 pop 2 pop 1 pop
 이런식으로하면
 출력이 위와 같이 나온다!
-"""
-"""백준 1등분 코드
-import sys
-
-input = sys.stdin.read
-
-
-def sol1874():
-    n, *nums = map(int, input().split())
-    cur = 1
-    st = []
-    answer = []
-    for num in nums:
-        while cur <= num:
-            st.append(cur)
-            answer.append('+')
-            cur += 1
-        if st[-1] != num:
-            answer = ['NO']
-            break
-        st.pop()
-        answer.append('-')
-    print('\n'.join(answer))
-   
-
-if __name__ == '__main__':
-    sol1874()
 """
