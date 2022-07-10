@@ -23,6 +23,8 @@ def dp(n):
 memo = {1: 0, 2: 1}
 n = int(input())
 print(dp(n))
+"""
+"""과정 예시
 n = 10
 m = 1 + min(dp(5)+0, dp(3) +1) = 1 + min(3,2) = 3
 
