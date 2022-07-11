@@ -37,4 +37,4 @@ def bfs(x, y):
     return graph[n - 1][m - 1]
 
 # BFS를 수행한 결과 출력
-print(bfs(0, 0))
+print(bfs(0, 0)) #(0,0)부터 (n-1,m-1)까지 (문제 상 좌표로는 (1,1)~(n,m)까지
