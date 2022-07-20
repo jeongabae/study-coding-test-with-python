@@ -7,7 +7,7 @@ while True:
     no = 0
 
     for c in s:
-        if c == '(' or c == '[': stack.append(c)
+        if c == '(' or c == '[': stack.append(c) #if c in '([':랑 같음!
         elif c == ')':
             if not stack or stack[-1]=='[':
                 no+=1
