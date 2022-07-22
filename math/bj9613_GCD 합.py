@@ -11,7 +11,7 @@ for _ in range(t):
     """
     print(sum([math.gcd(i[0],i[1]) for i in a]))
 
-"""
+""" 다른 분 코드
 def gcd(a, b):
     return a if b==0 else gcd(b, a%b)
 
