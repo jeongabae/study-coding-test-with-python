@@ -1,19 +1,19 @@
 import sys
 
 N = int(sys.stdin.readline().rstrip())
-maxCandy = ''
+ans = ''
 
 if N==0:
     print(0)
 else:
     while N:
         if N % (-2):
-            maxCandy = '1' + maxCandy #나눠떨어지지않으면 1을 앞에 추가
+            ans = '1' + ans #나눠떨어지지않으면 1을 앞에 추가
             N = N // -2 + 1 #이때 -13//-2=6이나오므로 위에 처럼 몫이 7 나머지가 1로 될 수 있게 +1을 해준 것!
         else:
-            maxCandy = '0' + maxCandy #나눠떨어지면 0을 앞에 추가.
+            ans = '0' + ans #나눠떨어지면 0을 앞에 추가.
             N //= -2
-print(maxCandy)
+print(ans)
 """그냥 일반적인 진수계산
 -13 = -2*(7) + 1
  7 = -2*(-3) + 1
