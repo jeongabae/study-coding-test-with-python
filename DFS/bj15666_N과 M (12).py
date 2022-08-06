@@ -1,4 +1,4 @@
-# 15656 N과 M(4)과 같이 풀면 되는데, N과 M(9)(10)(11)처럼 똑같은 수열 중복 제거
+# 15652 N과 M(4)과 같이 풀면 되는데, N과 M(9)(10)(11)처럼 똑같은 수열 중복 제거
 import sys
 def input():
     return map(int, sys.stdin.readline().split())
