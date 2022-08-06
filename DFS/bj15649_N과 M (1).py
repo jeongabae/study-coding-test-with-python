@@ -8,7 +8,7 @@ def dfs(idx): #idx는 몇 번째에 있느냐를 의미 만약에 1 2 3이라는
         print(' '.join(ans))
         return
 
-    for i in range(1, N+1):#길이가 M이 아니라면 1부터 N까지의 숫자를 확인(증가하는 순이므로 1부터)
+    for i in range(1, N+1):#길이가 M이 아니라면 1부터 N까지의 숫자를 확인
         if not used[i]: #중복 없어야 하므로.. 만약에 수열에 숫자i가 아직 없다면
             used[i] = 1 #방문(사용) 처리를해주고,
             ans.append(str(i)) #그 숫자를 수열에 넣는다.
