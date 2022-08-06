@@ -16,19 +16,3 @@ def dfs(idx,start): #idx는 몇 번째에 있느냐를 의미 만약에 1 2 3이
             used[i] = 0 #어떤 수열을 찾았으므로 다음 수열을 찾기 위해 수 하나를 꺼내준다. 즉, 방문(사용)하지 않았다고 표시.
             ans.pop() # 수열에서 수를 꺼냄
 dfs(0,1) #0번째 수부터 시작수는 1부터 길이가 M인 수열을 만들자.
-
-"""다른 사람 코드
-n,m = list(map(int,input().split()))
-s = []
-def dfs(start):
-    if len(s)==m:
-        print(' '.join(map(str,s)))
-        return
-    
-    for i in range(start,n+1):
-        if i not in s:
-            s.append(i)
-            dfs(i+1)
-            s.pop()
-dfs(1)
-"""
