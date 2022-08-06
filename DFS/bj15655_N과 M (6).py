@@ -13,7 +13,7 @@ def dfs(idx,start): #idx는 몇 번째에 있느냐를 의미 만약에 1 2 3이
         return
 
     for i in range(start, N+1):# 길이가 M이 아니라면 start부터 N까지의 숫자를 확인
-        if not used[i]: #중복 없어야 하므로.. 만약에 수열에 숫자 a[i]가 아직 없다면
+        if not used[i]: #중복 없어야 하므로.. 만약에 수열에 숫자 a[i-1]가 아직 없다면
             used[i] = 1 #방문(사용) 처리를해주고,
             ans.append(str(a[i-1])) #그 숫자를 수열에 넣는다.
             dfs(idx + 1, i+1) #그리고 그 다음 수가 뭐가 올 수 있을지 찾는다.(가지치기) start는 지금까지 수열에 있는 수보다 커야하므로 1더해준다.
