@@ -1,6 +1,6 @@
 import sys
 
-def next_permutations(li): #다음 순열 구하는 함수
+def next_permutations(a): #다음 순열 구하는 함수
     # 1. a[i-1] < a[i]를 만족하는 가장 큰 i를 찾는다.
     i = n - 1
     while (a[i - 1] >= a[i] and i > 0):  # a[i-1] < a[i]를 만족하지 않는 경우 즉,a[i-1]>=a[i] 그리고 i<0이면 그 전 인덱스 확인.
