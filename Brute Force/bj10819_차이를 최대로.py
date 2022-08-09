@@ -14,7 +14,7 @@ def find_max(arr):  #주어진 식의 최대를 찾기 위함
     ans = max(ans, tmp) #비교해서 최대값을 저장
 
 
-for i in permutations(nums): #permutations라이브러리 이용(입력받은 리스트의 원소중에서 N개를 뽑는다.)
+for i in permutations(nums): #permutations라이브러리 이용
     find_max(i) #각각의 순열마다 원소들의 차의 절대값의 최대값을 구하는 함수
 
 print(ans)
