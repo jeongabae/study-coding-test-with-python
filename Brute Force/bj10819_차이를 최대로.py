@@ -1,9 +1,9 @@
+# 순열 라이브러리 이용 내풀이 1
 from itertools import permutations
 
 N = int(input())
 nums = list(map(int, input().split()))
 ans = 0
-
 
 def find_max(arr):  #주어진 식의 최대를 찾기 위함
     global ans
