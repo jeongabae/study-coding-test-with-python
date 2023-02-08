@@ -8,3 +8,4 @@ for i in range(len(b)-len(a)+1):
     ans.append(cnt)
 
 print(min(ans))
+print(ans)
